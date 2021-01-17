@@ -316,8 +316,6 @@ footer {
     flex: 1;
     color: #0079c7;
     margin-right: 10px;
-
-
 }
 
 .footer_areaitem h3 {
@@ -332,6 +330,33 @@ footer {
     flex-direction: column;
 }
 
+input#form-name {
+    margin-top: 10px;
+}
+
+input#form-name, input#form-mail, input#form-tel, textarea#form-message {
+    width:200px;
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 2px solid #39aae1;
+    font-size: 16px;
+    color: #39aae1;
+    margin-bottom: 10px;
+    resize: none; 
+}
+
+input#form-btn {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #39aae1;
+    font-size: 16px;
+    color: #39aae1;
+    display: inline-block;
+}
+
 .footer_copy {
     border-top: 1px solid #efefef;
     height: 40px;
@@ -341,34 +366,18 @@ footer {
     text-align: center;
 }
 
-.input_name, .input_mail, .input_message {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #39aae1;
-
-}
-
-.input_btn {
-    margin-top: 15px;
-    padding: 10px;
-    border: 1px solid #39aae1;
-    display: inline-block;
-}
-
 /* Responsividade */
 
 .menuMobile {
     display: none;
     width: 40px;
     height: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-right: 20px;
+    margin:40px;
 }
 
-.mm_line {
-    height: 3px;
-    background-color: #39aae1;
+#menuBars {
+    color: #39aae1;
+    font-size:20px;
 }
 
 @media (max-width:768px) {

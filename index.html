@@ -3,9 +3,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, user-scalable=0"/>
         <link rel="stylesheet" type="text/css" href="assets/css/template.css">
-        <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <script type="text/javascript">
             window.onload = function() {
                 document.querySelector(".menuMobile").addEventListener("click", function(){
@@ -29,20 +27,15 @@
                 <div class="menu">
                     <nav>
                         <div class="menuMobile">
-                            <div class="mm_line">
-                            </div>
-                            <div class="mm_line">
-                            </div>
-                            <div class="mm_line">
-                            </div>
+                            <i id="menuBars" class="fas fa-bars"></i>
                         </div>
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Departments</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li class="active"><a href="">Schedule Appointment</a></li> 
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about-us">About Us</a></li>
+                            <li><a href="#departments">Departments</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li class="active"><a href="#contact">Schedule Appointment</a></li> 
                         </ul>
                     </nav>
 
@@ -92,7 +85,7 @@
                 <section>
                     <div class="widget">
                         <div class="widget_title">
-                            <h2 class="widget_title_text">Departments</h2>
+                            <h2 id="departments" class="widget_title_text">Departments</h2>
                             <div class="widget_title_bar"></div>
                         </div>
                         <div class="widget_body flex_departments">
@@ -186,7 +179,7 @@
                 <aside>
                     <div class="widget">
                         <div class="widget_title">
-                            <h2 class="widget_title_text">Latest News</h2>
+                            <h2 id="blog" class="widget_title_text">Latest News</h2>
                             <div class="widget_title_bar"></div>
                         </div>
                         <div class="widget_body flex_news">
@@ -252,8 +245,8 @@
                             <div class="widget_title_bar"></div>
                         </div>
                         <div class="widget_body contacts">
-                            <address>by phone: <a href="tel:+559999999999">+55 (99) 9999 9999</a></address>
-                            <address>or by e-mail: <a href="mailto:contact@medicalcenter.com">contact@medicalcenter.com</a></address>
+                            <address>by phone: <a href="tel:+559999999999"><i class="fas fa-mobile-alt"></i> +55 (99) 9999 9999</a></address>
+                            <address>or by e-mail: <a href="mailto:contact@medicalcenter.com"><i class="fas fa-envelope"></i> contact@medicalcenter.com</a></address>
                 
                         </div>
                     </div>
@@ -296,7 +289,7 @@
                 <div class="footer_area">
                     <div class="footer_areaitem">
                         <div class="widget_title">
-                            <h2 class="widget_title_text">Medical Center Clinic</h2>
+                            <h2 id="about-us" class="widget_title_text">Medical Center Clinic</h2>
                             <div class="widget_title_bar"></div>
                         </div>
                         <div>
@@ -340,23 +333,27 @@
                     </div>
                     <div class="footer_areaitem">
                         <div class="widget_title">
-                            <h2 class="widget_title_text">Drop Us a Line</h2>
+                            <h2 id="contact" class="widget_title_text">Drop Us a Line</h2>
                             <div class="widget_title_bar"></div>
                         </div>
                         <div class="widget_body contacts">
-                            <address>by phone: <a href="tel:+559999999999">+55 (99) 9999 9999</a></address>
-                            <address>or by e-mail: <a href="mailto:contact@medicalcenter.com">contact@medicalcenter.com</a></address>
+                            <address>by phone: <a href="tel:+559999999999"><i class="fas fa-mobile-alt"></i> +55 (99) 9999 9999</a></address>
+                            <address>or by e-mail: <a href="mailto:contact@medicalcenter.com"><i class="fas fa-envelope"></i> contact@medicalcenter.com</a></address>
                         </div>
                         <div class="form_footer">
-                            <div class="input_name">Name</div>
-                            <div class="input_mail">E-mail</div>
-                            <div class="input_message">Message</div>
-                            <div class="input_btn">Send!</div>
+                            <form>
+                                <input id="form-name" type="text" placeholder="Your Name *"><br>
+                                <input id="form-mail" type="email" placeholder="Your E-mail *"><br>
+                                <input id="form-tel" type="tel" placeholder="Your Phone *"><br>
+                                <textarea id="form-message" placeholder="Your Message *"></textarea><br>
+                                <input id="form-btn" type="submit">
+                              </form>
                         </div>
                     </div>
                 </div>
                 <div class="footer_copy">
-                    Copyright - Todos os direitos reservados.
+                    <p><i class="far fa-copyright"></i> 2020 MediCenter Theme. All rights reserved.</p>
+                    <p>Code by Ligia Brusamolin de Rezende <a style="font-size:16px; padding-left: 10px; padding-right: 10px;" href="https://github.com/LiRezende"><i class="fab fa-github"></i></a> <a style="font-size:16px;" href="https://www.linkedin.com/in/ligia-brusamolin-1617b866/"><i class="fab fa-linkedin-in"></i></a></p>
                 </div>
             </div>
         </footer>
